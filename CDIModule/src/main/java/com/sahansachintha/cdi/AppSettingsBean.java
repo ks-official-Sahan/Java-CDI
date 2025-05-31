@@ -1,7 +1,7 @@
-package com.sahansachintha.ee;
+package com.sahansachintha.cdi;
 
-import com.sahansachintha.ee.cdi.MyService;
-import com.sahansachintha.ee.remote.AppSettings;
+import com.sahansachintha.cdi.cdi.MyService;
+import com.sahansachintha.cdi.remote.AppSettings;
 import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 

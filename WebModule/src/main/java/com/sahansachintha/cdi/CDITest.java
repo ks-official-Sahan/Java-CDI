@@ -1,6 +1,7 @@
-package com.sahansachintha.ee;
+package com.sahansachintha.cdi;
 
-import com.sahansachintha.ee.remote.AppSettings;
+import com.sahansachintha.cdi.remote.AppSettings;
+import com.sahansachintha.cdi.remote.UserRegistration;
 import jakarta.ejb.EJB;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -19,10 +20,15 @@ public class CDITest extends HttpServlet {
     @EJB
     private AppSettings appSettings;
 
+    @EJB
+    private UserRegistration userRegistration;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
+
+        userRegistration.registerUser("Sahan", "Sachintha", "Sahan@gmail.com", "Sahan123");
 
         out.println(appSettings.getAppName() + " " + appSettings.getAppVersion());
 

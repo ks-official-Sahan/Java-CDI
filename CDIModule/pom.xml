@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sahansachintha.ee</groupId>
+    <groupId>com.sahansachintha.cdi</groupId>
     <artifactId>CDIModule</artifactId>
     <version>1.0</version>
-    <name>cdi-module</name>
+    <name>CDIModule</name>
     <packaging>ejb</packaging>
 
     <properties>

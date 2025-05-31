@@ -1,6 +1,5 @@
-package com.sahansachintha.ee.cdi;
+package com.sahansachintha.cdi.cdi;
 
-import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.RequestScoped;
 
 //@ApplicationScoped

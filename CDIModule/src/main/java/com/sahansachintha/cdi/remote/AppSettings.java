@@ -1,4 +1,4 @@
-package com.sahansachintha.ee.remote;
+package com.sahansachintha.cdi.remote;
 
 import jakarta.ejb.Remote;
 
